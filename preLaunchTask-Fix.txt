@@ -1,0 +1,36 @@
+
+"preLaunchTask" never worked for me when defining a task typed 'npm'.
+--> error preLaunchTask 'npm: watch' not found when launching with F5
+
+Tried by using the extension code 'helloworld' generated 
+with the command 'yo code'.
+Tried by launching the task manually (ctrl+B, or with the menu)
+Tried by using task labelling, etc. and found only this turnaround :
+
+I defined a "type":"shell" task to be able to auto-launch the 
+builder before the debugger.
+
+like this : 
+
+tasks.json : 
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "defaultBuild",
+            "type": "shell",
+            "command": "npm run watch",
+            "problemMatcher": "$tsc-watch",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
+in launch.json : "preLaunchTask": "defaultBuild"
