@@ -9,7 +9,6 @@
 ### Initial release
 ### Known bugs
 
-
 ### TODO
 - Add rules for .gpr files
 - Find out .gpr files in current workspace

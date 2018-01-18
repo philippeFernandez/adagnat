@@ -1,21 +1,80 @@
 {
-  "sfor": {
-    "prefix": "sfor",
+  "for-loop": {
+    "prefix": "for",
     "body":
-      "for {1:i} in 1 .. 10 loop\r\n  Ada.Text_IO.Put (${1:i});\r\nend loop;\r\n",
-    "description": "",
+      "for ${1:a} in 1 .. 10 loop\r\n  ${1:a}:=${1:a};\r\nend loop;\r\n",
+    "description": "for...loop...end loop;",
     "scope": ""
   },
-  "sloop": {
-    "prefix": "sloop",
+  "foreach-loop": {
+    "prefix": "foreach",
+    "body": "for ${1:obj} of iterable loop\r\n Do_Things_On(${1:obj}) ;\r\nend loop;\r\n",
+    "description": "for obj of list loop....end loop;",
+    "scope": ""
+  },
+  "procedure-body": {
+    "prefix": "procedure-body",
+    "body":
+      "\r\nprocedure ${1:a}(A : Typ1; B : Typ2;...) is\r\nbegin\r\n  null;\r\nend ${1:a};\r\n",
+    "description": "procedure p is....;",
+    "scope": ""
+  },
+  "procedure-decl": {
+    "prefix": "procedure-decl",
+    "body":
+      "\r\nprocedure ${1:a}(A : Typ1; B : Typ2;...);\r\n",
+    "description": "procedure p;",
+    "scope": ""
+  },
+  "function-body": {
+    "prefix": "function-body",
+    "body":
+      "\r\nfunction ${1:a}(A : Typ1; B : Typ2;...) return Typ is\r\nbegin\r\n  return <value>;\r\nend ${1:a};\r\n",
+    "description": "function f is ...;",
+    "scope": ""
+  },
+  "funtion-decl": {
+    "prefix": "function-decl",
+    "body":
+      "\r\nfunction ${1:a}(A : Typ1; B : Typ2;...) return Typ;\r\n",
+    "description": "function f...;",
+    "scope": ""
+  },
+  "loop": {
+    "prefix": "loop",
     "body":
       "\r\nloop\r\n  ${1:a} := ${1:a} + 1;\r\n  exit when ${1:a} = 10;\r\nend loop;\r\n",
-    "description": "",
+    "description": "loop...exit...end loop;",
     "scope": ""
   },
-  "sforeach": {
-    "prefix": "sforeah",
-    "body": "for obj of iterable loop\r\n  ;\r\nend loop;\r\n",
+  "while": {
+    "prefix": "while-loop",
+    "body":
+      "\r\nwhile ${2:condition} loop\r\n  ${1:a} := ${1} + 1;\r\n  exit when ${1} = 10;\r\nend loop;\r\n",
+    "description": "while cond loop...end loop;",
+    "scope": ""
+  },
+  "switch-case": {
+    "prefix": "switchcase",
+    "body":"case switch of\r\n  when a =>\r\n    <code if a>;\r\n  when b =>\r\n    <code if b...>;\r\n  when others =>\r\n    <code if else...>;\r\nend case;\r\n",
+    "description": "case switch is...end case;",
+    "scope": ""
+  },
+  "case": {
+    "prefix": "case",
+    "body":"case switch of\r\n  when a =>\r\n    <code if a>;\r\n  when b =>\r\n    <code if b...>;\r\n  when others =>\r\n    <code if else...>;\r\nend case;\r\n",
+    "description": "case switch is...end case;",
+    "scope": ""
+  },
+  "if": {
+    "prefix": "if",
+    "body":"if cond then\r\n  code;\r\nelsif cond then\r\n  code;\r\nelse\r\n  code;\r\nend if;\r\n",
+    "description": "if cond then...elsif...else...end if;",
+    "scope": ""
+  },
+  "exception": {
+    "prefix": "exception",
+    "body":"exception\r\n  when others =>\r\n    raise;--(or null to ignore)\r\n",
     "description": "",
     "scope": ""
   }

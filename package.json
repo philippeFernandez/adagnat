@@ -46,8 +46,11 @@
           "severity": 4,
           "message": 5
         }
-      }
-    ]
+      }],
+        "snippets": [{
+                "language": "ada",
+                "path": "./snippets/snippets.json"
+}]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
