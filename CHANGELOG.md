@@ -2,7 +2,8 @@
 ## [Unreleased]
 - Initial dev 2018/01/08 
     - dummy command 'check' for debug purpose
-    - Imported rules from ada4vscode
+    - Imported rules from "ada4vscode"
+    - Imported and changed basic snippets from "AlessandroDelSole.ada"
     - ${gnat}
 
 ### Initial release
