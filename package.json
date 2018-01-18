@@ -1,7 +1,7 @@
 {
-    "name": "prelaunchfixed",
-    "displayName": "prelaunchFixed",
-    "description": "Fix auto-build",
+    "name": "artics-ada-gnat-vscode",
+    "displayName": "ada-gnat",
+    "description": "Ada mode for vs code integrated with AdaCore's Gnat",
     "version": "0.0.1",
     "publisher": "pfe",
     "engines": {
@@ -11,14 +11,15 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "*",
+        "onCommand:adagnat.activate"
     ],
-    "main": "./out/extension",
+    "main": "./out/ada-gnat",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "ada-gnat.adaCheck",
+                "title": "ada-gnat check extension cmd"
             }
         ]
     },

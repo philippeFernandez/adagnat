@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "configurations": [
         {
-            "name": "Extension",
+            "name": "ada-gat",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
