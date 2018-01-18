@@ -1,8 +1,9 @@
 # Change Log
 ## [Unreleased]
 - Initial dev 2018/01/08 
-    - dumme command 'check' for debug purpose
+    - dummy command 'check' for debug purpose
     - Imported rules from ada4vscode
+    - ${gnat}
 
 ### Initial release
 ### Known bugs
