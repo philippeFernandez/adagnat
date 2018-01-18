@@ -17,16 +17,22 @@ import * as vscode from 'vscode';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-    let checkCommand = vscode.commands.registerCommand('ada-gnat.adaCheck', adaCheckCommand);
+    // @DBG : simple check on extension activated
+    let checkCommand = vscode.commands.registerCommand('adagnat.check', ()=>{
+        adaCheckCommand();
+    });
     context.subscriptions.push(checkCommand);
-    
-    console.log('Extension ada-gnat is active, ok.');
-}
 
+    console.log('Extension adagnat is active, ok.');
+} 
+ 
 // this method is called when your extension is deactivated
-export function deactivate() {
+export function deactivate() {    
+    vscode.window.showInformationMessage('adagnat Has been deactivated ok.');
 }
-
-export function adaCheckCommand(){
-    vscode.window.showInformationMessage('ada-gnat Has been loaded and still active ok.');
+/*
+   ------------------------------------------------------------
+ */
+function adaCheckCommand(){
+    vscode.window.showInformationMessage('adagnat Has been loaded and still active ok.');
 }

@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "configurations": [
         {
-            "name": "ada-gat",
+            "name": "adagnat",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",

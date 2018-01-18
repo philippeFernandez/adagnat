@@ -1,13 +1,15 @@
 # Change Log
-- Initial release 2018/01/08 : Extension project creation
 ## [Unreleased]
+- Initial dev 2018/01/08 
+    - dumme command 'check' for debug purpose
+    - Imported rules from ada4vscode
+
 ### Initial release
 ### Known bugs
-- nothing works as nothing is done ;-)
+
 
 ### TODO
-- Import Ada mode from ada4vscode
-- Improve Ada mode from ada4vscode
+- Add rules for .gpr files
 - Find out .gpr files in current workspace
 - Create .vscode/gnatsettings.json
     - list gnat projects in workspace
