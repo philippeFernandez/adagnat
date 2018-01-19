@@ -8,7 +8,7 @@
     "vscode": "^1.19.0"
   },"repository": {
     "type": "git",
-    "url": "https://une_adresse_https_a_definir"
+    "url": "https://github.com/philippeFernandez/adagnat.git"
   },
   "icon": "icon.png",
   "categories": ["Other"],
