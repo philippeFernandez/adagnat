@@ -1,35 +1,37 @@
 {
-    "comments": {
-        // single-line comments
-        "lineComment": "--"
-    },
-    // symbols used as brackets
-    "brackets": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"]
-    ],
-    // symbols that are auto closed when typing
-    "autoClosingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
-    ],
-    // symbols that that can be used to surround a selection
-    "surroundingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
-    ],
-
-    "folding": {
-		"markers": {
-			"start": "^\\s*\\-\\-\\s*\\{\\{\\{(.*)$",
-			"end": "^\\s*\\-\\-\\s*\\}\\}\\}(.*)$"
-		}
+  "comments": {
+    // single-line comments
+    "lineComment": "--"
+  },
+  // symbols used as brackets
+  "brackets": [["{", "}"], ["[", "]"], ["(", ")"]],
+  // symbols that are auto closed when typing
+  "autoClosingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["\"", "\""],
+    ["'", "'"]
+  ],
+  // symbols that that can be used to surround a selection
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["\"", "\""],
+    ["'", "'"]
+  ],
+  // folding multiple comments lines :
+  // --{{ start block 
+  // --}} end block
+  "folding": {
+    "markers": {
+      "start": "^\\s*\\-\\-\\s*\\{\\{\\{(.*)$",
+      "end": "^\\s*\\-\\-\\s*\\}\\}\\}(.*)$"
     }
+  },
+  "indentationRules": {
+      "increaseIndentPattern": "begin|then",
+      "decreaseIndentPattern": "end\\s*;|end\\s+if;"
+  }
 }

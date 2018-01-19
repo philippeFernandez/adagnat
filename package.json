@@ -6,7 +6,11 @@
   "publisher": "pfe",
   "engines": {
     "vscode": "^1.19.0"
+  },"repository": {
+    "type": "git",
+    "url": "https://une_adresse_https_a_definir"
   },
+  "icon": "icon.png",
   "categories": ["Other"],
   "activationEvents": ["onCommand:adagnat.check"],
   "main": "./out/adagnat",
@@ -46,11 +50,14 @@
           "severity": 4,
           "message": 5
         }
-      }],
-        "snippets": [{
-                "language": "ada",
-                "path": "./snippets/snippets.json"
-}]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ada",
+        "path": "./snippets/snippets.json"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
