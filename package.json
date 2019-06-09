@@ -6,13 +6,18 @@
   "publisher": "pfe",
   "engines": {
     "vscode": "^1.19.0"
-  },"repository": {
+  },
+  "repository": {
     "type": "git",
     "url": "https://github.com/philippeFernandez/adagnat.git"
   },
   "icon": "icon.png",
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:adagnat.check"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:adagnat.check"
+  ],
   "main": "./out/adagnat",
   "contributes": {
     "commands": [
@@ -25,8 +30,14 @@
     "languages": [
       {
         "id": "ada",
-        "aliases": ["Ada", "ada"],
-        "extensions": [".adb", ".ads"],
+        "aliases": [
+          "Ada",
+          "ada"
+        ],
+        "extensions": [
+          ".adb",
+          ".ads"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
