@@ -14,15 +14,18 @@ This extension is checked only with the following Gnat version : [AdaCore Gnat G
 **![TODO](images/alert-24x24.png) NB: Development in progress, use with care**
 
 ## Features
-* Code colorization
-* Problem matcher ${gnat}
-* Auto-indentation on the fly
-* Codes snippets
-* Auto-completion
-* ![TODO](images/alert-24x24.png) code formatter
-* ![TODO](images/alert-24x24.png) linking with gnat xrefs (.ali)
-* ![TODO](images/alert-24x24.png) task snippets for gnat build, compile
-* ![TODO](images/alert-24x24.png) support from Gnat Project (.gpr) to define workspace scope
+* Ada language support
+    * Code colorization
+    * Problem matcher ${gnat}
+    * Auto-indentation on the fly
+    * Codes snippets
+    * Auto-completion
+    * ![TODO](images/alert-24x24.png) code formatter
+    * ![TODO](images/alert-24x24.png) linking with gnat xrefs (.ali)
+    * ![TODO](images/alert-24x24.png) task snippets for gnat build, compile
+* gpr build language support
+    * ![TODO](images/alert-24x24.png) colorization, snippets...
+    * ![TODO](images/alert-24x24.png) support from Gnat Project (.gpr) to define workspace scope
 
 ## Requirements
 
